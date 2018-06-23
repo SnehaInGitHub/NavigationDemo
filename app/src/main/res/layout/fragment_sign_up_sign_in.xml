@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical">
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/fragment_sign_up_sign_in_btnSignIn"
+        style="@style/StyleCommonMaterialButton"
+        android:layout_above="@id/fragment_sign_up_sign_in_btnSignUp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="@string/sign_in" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/fragment_sign_up_sign_in_btnSignUp"
+        style="@style/StyleCommonMaterialButton"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="@string/sign_up" />
+</RelativeLayout>

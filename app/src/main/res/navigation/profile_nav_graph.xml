@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/welcomeFragment">
+
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="com.navigationdemo.activities.ProfileActivity"
+        android:label="ProfileActivity" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.navigationdemo.ui.fragment.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.navigationdemo.ui.fragment.WelcomeFragment"
+        android:label="WelcomeFragment" />
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="com.navigationdemo.ui.fragment.SendFragment"
+        android:label="SendFragment" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.navigationdemo.ui.fragment.CameraFragment"
+        android:label="CameraFragment" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.navigationdemo.ui.fragment.GalleryFragment"
+        android:label="GalleryFragment" />
+    <fragment
+        android:id="@+id/slideFragment"
+        android:name="com.navigationdemo.ui.fragment.SlideFragment"
+        android:label="SlideFragment" />
+    <fragment
+        android:id="@+id/toolFragment"
+        android:name="com.navigationdemo.ui.fragment.ToolFragment"
+        android:label="ToolFragment" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="com.navigationdemo.ui.fragment.ShareFragment"
+        android:label="ShareFragment" />
+</navigation>

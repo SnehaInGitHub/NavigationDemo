@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/signUpSignInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.navigationdemo.ui.fragment.SignInFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin">
+
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+
+        <argument
+            android:name="emailId"
+            android:defaultValue="abc@grr.la"
+            app:type="string" />
+
+        <argument
+            android:name="password"
+            android:defaultValue="qwerty"
+            app:type="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.navigationdemo.ui.fragment.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.navigationdemo.ui.fragment.SignUpFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@+id/signUpSignInFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpSignInFragment"
+        android:name="com.navigationdemo.ui.fragment.SignUpSignInFragment"
+        android:label="fragment_sign_up_sign_in"
+        tools:layout="@layout/fragment_sign_up_sign_in">
+
+        <action
+            android:id="@+id/action_signUpSignInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+
+        <action
+            android:id="@+id/action_signUpSignInFragment_to_loginFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+</navigation>
